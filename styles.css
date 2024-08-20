@@ -1,0 +1,135 @@
+/* Definição das cores da paleta em formato de classe */
+
+/* Cor de fundo principal */
+.bg-body {
+    background-color: #800401;
+}
+
+/* Cor de fundo alternativo */
+.bg-offbody {
+    background-color: #F7DEE7;
+}
+
+/* Cor de fundo do conteúdo */
+.bg-content {
+    background-color: #FFC9D1;
+}
+
+/* Cor de texto principal */
+.text-body {
+    color: #800401;
+}
+
+/* Cor secundária do texto e cabeçalhos */
+.text-content {
+    color: #AD4242;
+}
+
+.text-header {
+    color: #FFC9D1;
+}
+
+h5{
+    font-size: 30px;
+}
+
+.btn-content {
+    color: #800401;
+    border: none;
+}
+
+.btn-content:hover {
+    color: #800401;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-content {
+    position: relative;
+    overflow: hidden;
+    font-size: 8vh;
+}
+
+.btn-content:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-content::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #800401;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.btn-content:hover::after {
+    transform: translateX(0);
+}
+
+.btn-transform {
+    position: relative;
+    background-color: #800401;
+    color: #F7DEE7;
+    border: none;
+    padding: 8px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    overflow: hidden;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.4s ease;
+}
+
+.btn-transform .text {
+    display: inline-block;
+    position: relative;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.btn-transform:hover .text {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.btn-transform::after {
+    content: 'Loading...';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #F7DEE7;
+    font-size: 16px;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    opacity: 0;
+}
+
+.btn-transform:hover::after {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.btn-transform:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* Cor de fundo do footer */
+.bg-footer {
+    background-color: #800401;
+}
+
+/* Ajustes de tipografia */
+.font-sedan {
+    font-family: 'Sedan', sans-serif;
+}
+
+footer p {
+    color: #FFC9D1;
+}
